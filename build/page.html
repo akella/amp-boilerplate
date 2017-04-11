@@ -1,0 +1,196 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+	<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+	<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+	<style amp-custom>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.block {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*# sourceMappingURL=app.css.map */
+
+</style>
+
+    <title>Index page</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  </head>
+  <body>
+    
+	
+	  <h1>Welcome to the mobile web</h1>
+	  <amp-list width="auto"
+	    height="100"
+	    layout="fixed-height"
+	    src="https://ampbyexample.com/json/examples.json"
+	    class="m1">
+	    <template type="amp-mustache"
+	      id="amp-template-id">
+	      <div>
+	        <a href="">Index page</a>
+	      </div>
+	    </template>
+	  </amp-list>
+	  <amp-youtube width="480"
+	    height="270"
+	    layout="responsive"
+	    data-videoid="3jaQ4Iq5dic">
+	  </amp-youtube>
+	  <amp-img src="http://placehold.it/400x400" alt="Welcome" height="400" width="400"></amp-img>
+
+
+	  <button on="tap:sidebar.toggle"
+	class="ampstart-btn caps m2">Toggle sidebar</button>
+
+	<amp-sidebar id="sidebar"
+	  layout="nodisplay"
+	  side="left">
+	  <amp-img class="amp-close-image"
+	    src="/img/ic_close_black_18dp_2x.png"
+	    width="20"
+	    height="20"
+	    alt="close sidebar"
+	    on="tap:sidebar.close"
+	    role="button"
+	    tabindex="0"></amp-img>
+	  <ul>
+	    <li>
+	      <a href="/">Home</a>
+	    </li>
+	    <li> Nav item 1</li>
+	    <li>
+	      
+	        Nav item 2 - &lt;amp-fit-text&gt;
+
+	    </li>
+	    <li>
+
+	        Nav item 3 - &lt;amp-fit-text&gt; longer text asdadad
+
+	    </li>
+	    <li> Nav item 4 - Image
+	      <amp-img class="amp-sidebar-image"
+	        src="/img/favicon.png"
+	        width="20"
+	        height="20"
+	        alt="an image"></amp-img>
+	    </li>
+	    <li> Nav item 5</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	  </ul>
+	</amp-sidebar>
+
+
+  </body>
+</html>

@@ -1,0 +1,95 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block modules %}
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+	<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+	<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+	<link href="css/app.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+	
+	  <h1>Welcome to the mobile web</h1>
+	  <amp-list width="auto"
+	    height="100"
+	    layout="fixed-height"
+	    src="https://ampbyexample.com/json/examples.json"
+	    class="m1">
+	    <template type="amp-mustache"
+	      id="amp-template-id">
+	      <div>
+	        <a href="{{url}}">{{title}}</a>
+	      </div>
+	    </template>
+	  </amp-list>
+	  <amp-youtube width="480"
+	    height="270"
+	    layout="responsive"
+	    data-videoid="3jaQ4Iq5dic">
+	  </amp-youtube>
+	  <amp-img src="http://placehold.it/400x400" alt="Welcome" height="400" width="400"></amp-img>
+
+
+	  <button on="tap:sidebar.toggle"
+	class="ampstart-btn caps m2">Toggle sidebar</button>
+
+	<amp-sidebar id="sidebar"
+	  layout="nodisplay"
+	  side="left">
+	  <amp-img class="amp-close-image"
+	    src="/img/ic_close_black_18dp_2x.png"
+	    width="20"
+	    height="20"
+	    alt="close sidebar"
+	    on="tap:sidebar.close"
+	    role="button"
+	    tabindex="0"></amp-img>
+	  <ul>
+	    <li>
+	      <a href="/">Home</a>
+	    </li>
+	    <li> Nav item 1</li>
+	    <li>
+	      
+	        Nav item 2 - &lt;amp-fit-text&gt;
+
+	    </li>
+	    <li>
+
+	        Nav item 3 - &lt;amp-fit-text&gt; longer text asdadad
+
+	    </li>
+	    <li> Nav item 4 - Image
+	      <amp-img class="amp-sidebar-image"
+	        src="/img/favicon.png"
+	        width="20"
+	        height="20"
+	        alt="an image"></amp-img>
+	    </li>
+	    <li> Nav item 5</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	    <li> Nav item 6</li>
+	  </ul>
+	</amp-sidebar>
+
+{% endblock %}
